@@ -42,7 +42,7 @@ type UpdatedBusFeature = {
 };
 
 /** ---------------- Config ---------------- */
-const API_BASE = "http://localhost:3001";
+const API_BASE = "https://busalert-ey9h.onrender.com";
 const ANCHOR_STOP_ID = "0261"; // internal stop
 
 /** ---------------- Helpers ---------------- */
