@@ -41,11 +41,6 @@ type UpdatedBusFeature = {
   };
 };
 
-type UpdatedBusesPayload = {
-  count: number;
-  buses: UpdatedBusFeature[];
-};
-
 /** ---------------- Config ---------------- */
 const API_BASE = "http://localhost:3001";
 const ANCHOR_STOP_ID = "0261"; // internal stop
@@ -127,7 +122,7 @@ export default function App() {
   const [anchorPreds, setAnchorPreds] = useState<StopTimePrediction[]>([]);
   const [destinations, setDestinations] = useState<GtfsStop[]>([]);
   const [destPreds, setDestPreds] = useState<StopTimePrediction[]>([]);
-  const [updatedBuses, setUpdatedBuses] = useState<UpdatedBusFeature[]>([]);
+  const [setUpdatedBuses] = useState<UpdatedBusFeature[]>([]);
 
   // ui
   const [error, setError] = useState<string | null>(null);
