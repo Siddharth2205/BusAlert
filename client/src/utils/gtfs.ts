@@ -1,4 +1,10 @@
-import type { GtfsStop } from "../api/gtfs";
+export type GtfsStop = {
+  index: number;
+  stop_id: string;
+  stop_name: string;
+  stop_lat: number;
+  stop_lon: number;
+};
 
 export function normalizeLineName(s: string) {
   return (s || "").replace(/\s+/g, " ").trim();

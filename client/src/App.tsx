@@ -122,7 +122,7 @@ export default function App() {
   const [anchorPreds, setAnchorPreds] = useState<StopTimePrediction[]>([]);
   const [destinations, setDestinations] = useState<GtfsStop[]>([]);
   const [destPreds, setDestPreds] = useState<StopTimePrediction[]>([]);
-  const [setUpdatedBuses] = useState<UpdatedBusFeature[]>([]);
+  const [updatedBuses, setUpdatedBuses] = useState<UpdatedBusFeature[]>([]);
 
   // ui
   const [error, setError] = useState<string | null>(null);
